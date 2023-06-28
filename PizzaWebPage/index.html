@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css/Syle.css">
+    <Link href="style.css/Syle.scss">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">       
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+    <title>Document</title>
+</head>
+<body>
+    <!--Navigaton-->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg fixed-top  p-4 bg-lg-trasparat ">
+            <div class="logo"><h1><a class="text-warning text-decoration-none secondaryfont" href="#">Pizza's სახლი</a></h1></div>
+            <button class="navbar-toggler" 
+                    type="button"  
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navmenu" >
+                    <span class="navbar-toggler-icon"></span> 
+            </button>
+
+            <div class="collapse navbar-collapse " id="navmenu"  >
+                <ul class="navbar-nav ms-auto align-items-center gap-4 text-black ">
+                    <li class="nav-item custom-font-size "><a href="#section1" class="mainfont nav-link text-black position-relative">Who we are</a></li>
+                    <li class="nav-item custom-font-size "><a href="#section3" class="mainfont nav-link text-black position-relative">What we offer</a></li>
+                    <li class="nav-item custom-font-size "><a href="#popluarmenu" class="mainfont nav-link text-black position-relative ">Popular</a></li>
+                    <li class="nav-item custom-font-size "><a href="#booking" class="mainfont nav-link text-black position-relative">How to Apply</a></li>
+                    <a href="#booking"><button type="button" class="btn btn-warning rounded-5 p-3 align-items-end fw-bold position-relative shadow">Book now!</button></a>
+                </ul>
+            </div>
+        </div>
+        </nav>
+        
+        <div class="mainpageholder d-flex align-items-center ">
+            <div class="leftsideholder w-50 vh-100">
+                <img class="img-fluid  vh-100 object-fit-cover w-100 " src="./Image/homlaning.JPG">
+            </div>
+            <div class="rightsideholder align-items-center justify-content-center position-relative flex-column d-flex mt-5 pt-5">
+                <img src="./Image/shape.png" class="shape position-absolute w-50 h-50">
+                <h1 id="first-page-text" class="bigfont fw-bold text-center">We Got Delicious <span class="text-warning ">,,Pizza''</span><br>
+                    <span class="text-warning"> You </span> Now , You Want some!<br>
+                    Start Your <span class="text-warning">Day</span> With Us!
+                </h1>     
+            </div>  
+            <img src="./Image/2shape.png" class="twoshape position-absolute ">
+        </div>
+      
+        <style>
+          @keyframes bounce {
+              0% {
+                  transform: translateY(0);
+              }
+              50% {
+                  transform: translateY(-10px);
+              }
+              100% {
+                  transform: translateY(0);
+              }
+          }
+          
+          .arrow img {
+              animation: bounce 2s infinite;
+          }
+      </style>
+      
+      <a href="#section1" class="text-warning">
+          <div class="arrow" style="position: absolute; right: 30%; bottom: 10%;  border-radius: 50px;">
+              <img src="./pngegg (3).png">
+              <h4 style="position:absolute; left: -15px; font-size: 20px ;">Scroll Down!</h4>
+          </div>
+      </a>
+    </header>
+
+    <!--section-first-->
+    <div class="section mt-5" id="section1">
+        <div class="container ">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-6 text-center text-md-start">
+                    <div class="leftText">
+                        <h1 class="section-frist-headline mb-4 fw-bold position-relative">Who We are?</h1>
+                        <p class="fs-5"><span class="line1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam consectetur neque distinctio minima odio ipsa minus facere.</span><br><br>
+                            <span class="line2"> Possimus illo accusantium pariatur alias sint neque cum adipisci! Ut veritatis at suscipit voluptas deleniti necessitatibus. Provident unde modi tenetur assumenda repudiandae magnam doloribus,</span><br><br>
+                            <span class="line3">blanditiis dolorum, doloremque nulla iure quidem recusandae est suscipit.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, voluptates.</p></span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="RightImage">
+                        <img src="./Image/ingredients.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!--section-second-Menu-->
+    <div class="menu-section mt-5 " id="section3">
+      <div class="container ">
+        <h1 class="secondaryfont fs-1 fw-bold d-flex justify-content-center position-relative">Our Menu</h1>
+        <ul class="tabs w-100">
+          <li data-tab-target="#home" class="tab active">Pizza's</li>
+          <li data-tab-target="#pricing" class="tab">Drinks</li>
+          <li data-tab-target="#about"class="tab">Salads</li>
+        </ul>
+        <div id="tab-content">
+          <div id="home" data-tab-content class="active" >
+            <div class="menu-items row d-flex mt-5  align-items-center justify-content-center"   >
+              <div class=" col-md-6 d-flex justify-content-between align-items-center">
+                <p>Margarreta <br><span>Lorem ipsum dolor sit amet consectetur, adipisicing </span></p>
+                <span>$16</span>
+              </div>
+              <div class="col-md-6 d-flex justify-content-between align-items-center">
+                <p>Margarreta <br><span>Lorem ipsum dolor sit amet consectetur, adipisicing </span></p>
+                <span>$16</span>
+              </div>
+              <div class="col-md-6 d-flex justify-content-between align-items-center">
+                <p>Margarreta <br><span>Lorem ipsum dolor sit amet consectetur, adipisicing </span></p>
+                <span>$16</span>
+              </div>
+              <div class="col-md-6 d-flex justify-content-between align-items-center">
+                <p>Margarreta <br><span>Lorem ipsum dolor sit amet consectetur, adipisicing </span></p>
+                <span>$16</span>
+              </div>
+              <div class="col-md-6 d-flex justify-content-between align-items-center">
+                <p>Margarreta <br><span>Lorem ipsum dolor sit amet consectetur, adipisicing </span></p>
+                <span>$16</span>
+              </div>
+              <div class="col-md-6 d-flex justify-content-between align-items-center">
+                <p>Margarreta <br><span>Lorem ipsum dolor sit amet consectetur, adipisicing </span></p>
+                <span>$16</span>
+              </div>
+              <div class="col-md-6 d-flex justify-content-between align-items-center" >
+                <p>Margarreta <br><span>Lorem ipsum dolor sit amet consectetur, adipisicing </span></p>
+                <span>$16</span>
+              </div>
+              <div class="col-md-6 d-flex justify-content-between align-items-center" >
+                <p>Margarreta <br><span>Lorem ipsum dolor sit amet consectetur, adipisicing </span></p>
+                <span>$16</span>
+              </div>
+              <div class="col-md-6 d-flex justify-content-between align-items-center">
+                <p>Margarreta <br><span>Lorem ipsum dolor sit amet consectetur, adipisicing </span></p>
+                <span>$16</span>
+              </div>
+              <div class="col-md-6 d-flex justify-content-between align-items-center">
+                <p>Margarreta <br><span>Lorem ipsum dolor sit amet consectetur, adipisicing </span></p>
+                <span>$16</span>
+              </div>
+              <div class="col-md-6 d-flex justify-content-between align-items-center">
+                <p>Margarreta <br><span>Lorem ipsum dolor sit amet consectetur, adipisicing </span></p>
+                <span>$16</span>
+              </div>
+              <div class="col-md-6 d-flex justify-content-between align-items-center">
+                <p>Margarreta <br><span>Lorem ipsum dolor sit amet consectetur, adipisicing </span></p>
+                <span>$16</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="pricing" data-tab-content>
+            <p>Coca-cola</p>
+            <p>Fanta</p>
+          </div>
+          <div id="about" data-tab-content=>
+            <p>Kitri pomidori simon/p>
+          </div>
+        </div>  
+      </div>
+    </div>
+            
+        
+   
+
+   <!--Seciton-third-Popular-menu--> 
+    <div class="section3 mt-5 position-relative" id="popluarmenu">
+      <img id="chef-image" src='./Image/Cartoon-fat-chef-holding-tray-of-food-on-transparent-background-PNG.png' style="right:0; z-index: -1; width: 20%;">
+        <div class="container">
+            <h1 class="secondaryfont mt-5 mb-5 fw-bold">Our Popular Pizza's</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!--First-->
+                <div class="col;" id="col-1">
+                  <div class="card">
+                    <img src="./Image/m1.jpg" class="card-img-top " alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Margaritta</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                <!--second-->
+                <div class="col" id="col-2">
+                  <div class="card">
+                    <img src="./Image/m2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+                <!--third-->
+                <div class="col" id="col-3">
+                  <div class="card">
+                    <img src="./Image/m4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer</p>
+                    </div>
+                  </div>
+                </div>
+                <!--fourth-->
+                <div class="col" id="col-4">
+                  <div class="card">
+                    <img src="./Image/m3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+                <!--fifth-->
+                <div class="col" id="col-5">
+                    <div class="card">
+                      <img src="./Image/m1.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                  </div>
+                <!--six-->
+                <div class="col" id="col-6">
+                    <div class="card">
+                      <img src="./Image/m3.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Booking-section-->
+    <style>
+      .orange-border {
+          border-color: orange;
+      }
+  </style>
+  
+  <div class="section-booking mt-5" id="booking">
+      <div class="container">
+          <h1 class="d-flex justify-content-center secondaryfont">Booking and Information</h1>
+          <h2 class="d-flex justify-content-center mb-5 text-center secondaryfont" style="font-size: 26px;">Book A Table for Special meetings, birthday parties, and more...</h2>
+  
+          <form class="row g-3" onsubmit="validateForm(event)">
+              <div class="col-md-6">
+                  <label for="inputName" class="form-label">Full Name</label>
+                  <input type="name" class="form-control orange-border" id="inputName" placeholder="Type Your Name" required>
+              </div>
+              <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control orange-border" id="inputEmail4" placeholder="Type Your Email" required>
+              </div>
+              <div class="col-12">
+                  <label for="inputAddress" class="form-label">Number</label>
+                  <input type="tel" class="form-control orange-border" id="inputAddress" placeholder="(+995)55 . . ." required>
+              </div>
+  
+              <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                  <textarea class="form-control orange-border" id="exampleFormControlTextarea1" rows="3" placeholder="Message us for more Information"></textarea>
+              </div>
+  
+              <div class="col-md-4">
+                  <label for="inputState" class="form-label">Number of people</label>
+                  <select id="inputState" class="form-select orange-border" required>
+                      <option selected>Choose...</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>12+ full reservation</option>
+                  </select>
+              </div>
+  
+              <div class="col-md-4">
+                  <label for="inputDate" class="form-label">Date</label>
+                  <input type="date" class="form-control orange-border" id="inputDate" required>
+              </div>
+  
+              <div class="col-12">
+                  <button type="submit" class="btn btn-warning mb-5">Book a Table</button>
+                  <span id="errorMessage" style="color: red; display: none;">Fill all the gaps</span>
+              </div>
+          </form>
+      </div>
+  </div>
+
+  <!--footer-->
+
+
+ <footer class="text-white text-center text-lg-start" style="background-color: #23242a;">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row mt-4">
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Pizza's <span class="text-warning">სახლი</span></h5>
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+          voluptatum deleniti atque corrupti.
+        </p>
+        <p class="text-warning">
+          Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas
+          molestias.
+        </p>
+
+        <div class="mt-4">
+          <!-- Facebook -->
+          <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-facebook-f"></i></a>
+          <!-- Dribbble -->
+          <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-dribbble"></i></a>
+          <!-- Twitter -->
+          <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-twitter"></i></a>
+          <!-- Google + -->
+          <a type="button" class="btn btn-floating btn-warning btn-lg"><i class="fab fa-google-plus-g"></i></a>
+          <!-- Linkedin -->
+        </div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0 align-items-center justify-content-center d-flex flex-column">
+        <ul class="fa-ul" style="margin-left: 1.65em;">
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Georgia, Tbilisi</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">info@example.com</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+(995)52515151</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+0322111111 </span>
+          </li>
+        </ul>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4 text-warning">Opening hours</h5>
+
+        <table class="table text-center text-light ">
+          <tbody class="font-weight-normal  ">
+            <tr class="text-light">
+              <td class="bg-transparent text-light">Mon - Thu:</td>
+              <td class="bg-transparent text-light">8am - 9pm</td>
+            </tr>
+            <tr>
+              <td class="bg-transparent text-light">Fri - Sat:</td>
+              <td class="bg-transparent text-light">8am - 1am</td>
+            </tr>
+            <tr>
+              <td class="bg-transparent text-light">Sunday:</td>
+              <td class="bg-transparent text-light">9am - 10pm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!--Grid column-->
+    </div>
+    <!--Grid row-->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Tengo'sCoding.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+  
+
+
+  
+
+
+
+
+
+   
+      
+
+ 
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./javascript.js"></script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,208 @@
+.navbar {
+  background-color: transparent;
+}
+
+.shape {
+  top: -30%;
+  right: 40%;
+  z-index: -1;
+}
+
+.twoshape {
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.bigfont {
+  font-size: 48px;
+}
+
+.custom-font-size {
+  font-size: 18px;
+}
+
+.mainfont {
+  font-family: "Montserrat", sans-serif;
+}
+
+.secondaryfont {
+  font-family: "Playfair Display", serif;
+}
+
+.pizza-logo {
+  left: 20%;
+  height: 80px;
+}
+
+.navbar-nav li a::after {
+  content: "";
+  position: absolute;
+  background-color: #ff6a06;
+  height: 2px;
+  width: 0%;
+  left: 0;
+  bottom: 7px;
+  transition: 0.2s;
+}
+
+.navbar-nav li a:hover::after {
+  width: 100%;
+}
+
+.leftText h1::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Adjust the distance of the line from the text */
+  left: 0;
+  width: 38%;
+  height: 2px; /* Adjust the height of the line */
+  background-color: rgb(216, 186, 16);
+}
+
+@media (max-width: 760px) {
+  .leftText h1::after {
+    width: 100%;
+  }
+}
+.PizzName {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+}
+
+.PizzName span {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+}
+
+.rightsideholder {
+  width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .mainpageholder {
+    background-image: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../Image/homlaning.JPG);
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    justify-content: none;
+    text-align: start;
+    color: #fff;
+    font-size: 24px;
+  }
+  .rightsideholder {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 50%;
+    display: none;
+    position: absolute;
+    justify-content: none;
+    align-items: none;
+    text-align: start;
+  }
+  #first-page-text {
+    font-size: 38px;
+    text-align: start;
+  }
+  .leftsideholder {
+    display: none;
+  }
+  .navbar {
+    background-color: #fff;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 0px;
+    margin: 0px;
+  }
+  #chef-image {
+    display: none;
+    overflow: none;
+  }
+  .shape {
+    display: none;
+  }
+  .twoshape {
+    display: none;
+  }
+  .tab {
+    gap: 20px;
+    font-size: 22px;
+  }
+}
+#chef-image {
+  position: sticky;
+  top: 0;
+  float: right; /* Optional: Adjust the image alignment */
+  width: 10%;
+  height: 10%;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 25px;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  border-bottom: 2px solid orange;
+}
+
+.tab {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tab.active {
+  color: orange;
+}
+
+.tab:hover {
+  color: orange;
+}
+
+.menu-items p {
+  font-size: 24px;
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  border-bottom: 1px solid orange;
+}
+.menu-items p span {
+  color: black;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.card {
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid orange;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}/*# sourceMappingURL=Syle.css.map */
